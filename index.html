@@ -60,6 +60,45 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
 
+            <tr onmouseout="lodv2_stop()" onmouseover="lodv2_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="lodv2_image"><video width="160" height="160" muted autoplay loop playsinline style="object-fit:contain;background:#fff;">
+                  <source src="images/lod-loc-v2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/lod-loc-v2.png" width="160" height="160" style="object-fit:contain;background:#fff;">
+                </div>
+                <script type="text/javascript">
+                  function lodv2_start() {
+                    document.getElementById('lodv2_image').style.opacity = "1";
+                  }
+
+                  function lodv2_stop() {
+                    document.getElementById('lodv2_image').style.opacity = "0";
+                  }
+                  lodv2_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://pppppsb.github.io/LoD-Locv2/">
+                  <span class="papertitle">LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment</span>
+                </a>
+                <br>
+                Juelin Zhu, Shuaibang Peng, <strong>Long Wang</strong>, Hanlin Tan, <br> Yu Liu, Maojun Zhang, Shen Yan
+                <br>
+                <em>ICCV</em>, 2025
+                <br>
+                <a href="https://pppppsb.github.io/LoD-Locv2/">project page</a> / 
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhu_LoD-Loc_v2_Aerial_Visual_Localization_over_Low_Level-of-Detail_City_Models_ICCV_2025_paper.pdf">paper</a> /
+                <a href="https://arxiv.org/abs/2507.00659">arXiv</a> /
+                <a href="https://github.com/VictorZoo/LoD-Loc-v2">code</a>
+                <p></p>
+                <p>LoD-Loc v2 enables aerial visual localization using widely available low level-of-detail city models through explicit silhouette alignment.</p>
+              </td>
+            </tr>
+
+
             <tr onmouseout="lod_stop()" onmouseover="lod_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
