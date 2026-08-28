@@ -60,6 +60,44 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
 
+            <tr onmouseout="pilot_stop()" onmouseover="pilot_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="pilot_image"><video width="160" height="160" muted autoplay loop playsinline style="object-fit:contain;background:#fff;">
+                  <source src="images/pilot-hover.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/pilot-overview.webp" width="160" height="160" style="object-fit:contain;background:#fff;">
+                </div>
+                <script type="text/javascript">
+                  function pilot_start() {
+                    document.getElementById('pilot_image').style.opacity = "1";
+                  }
+
+                  function pilot_stop() {
+                    document.getElementById('pilot_image').style.opacity = "0";
+                  }
+                  pilot_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://nudt-sawlab.github.io/PiLoT/">
+                  <span class="papertitle">PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</span>
+                </a>
+                <br>
+                Xiaoya Cheng, <strong>Long Wang</strong>, Yan Liu, Xinyi Liu, <br> Hanlin Tan, Yu Liu, Maojun Zhang, Shen Yan
+                <br>
+                <em>CVPR</em>, 2026 <strong style="color:#f09228;">Highlight</strong>
+                <br>
+                <a href="https://nudt-sawlab.github.io/PiLoT/">project page</a> / 
+                <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Cheng_PiLoT_Neural_Pixel-to-3D_Registration_for_UAV-based_Ego_and_Target_Geo-localization_CVPR_2026_paper.pdf">paper</a> /
+                <a href="https://arxiv.org/abs/2603.20778">arXiv</a> /
+                <a href="https://github.com/nudt-sawlab/PiLoT">code</a>
+                <p></p>
+                <p>PiLoT directly registers live video against geo-referenced 3D maps for drift-free, real-time, and long-term ego and target geo-localization.</p>
+              </td>
+            </tr>
+
             <tr onmouseout="lodv2_stop()" onmouseover="lodv2_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
