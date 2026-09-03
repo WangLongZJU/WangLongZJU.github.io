@@ -60,6 +60,42 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       
 
+            <tr onmouseout="dirtymocap_stop()" onmouseover="dirtymocap_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id="dirtymocap_image"><video width="160" height="160" muted autoplay loop playsinline style="object-fit:contain;background:#fff;">
+                  <source src="images/dirtymocap-hover.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src="images/dirtymocap-cover.jpg" width="160" height="160" style="object-fit:contain;background:#fff;">
+                </div>
+                <script type="text/javascript">
+                  function dirtymocap_start() {
+                    document.getElementById('dirtymocap_image').style.opacity = "1";
+                  }
+
+                  function dirtymocap_stop() {
+                    document.getElementById('dirtymocap_image').style.opacity = "0";
+                  }
+                  dirtymocap_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://wanglongzju.github.io/DirtyMoCap-Project-Page/">
+                  <span class="papertitle">DirtyMoCap: Robust Motion Capture from Unconstrained Markers</span>
+                </a>
+                <br>
+                <a href="https://wanglongzju.github.io/" style="color:#000;"><strong>Long Wang</strong></a>, <a href="https://scholar.google.com/citations?user=Nongp7UAAAAJ&amp;hl=en">Shuting Zhao</a>, <a href="https://nudt-sawlab.github.io/">Shen Yan</a>, <br> <a href="https://ysysimon.com/">Siyuan Yu</a>, <a href="https://xiaobenli00.github.io/">Xiaoben Li</a>, <a href="https://zcai0612.github.io/">Zeyu Cai</a>, <br> <a href="https://yumenghou.com/">Yumeng Hou</a>, <a href="https://xiuyuliang.cn/">Yuliang Xiu</a>
+                <br>
+                <em>SIGGRAPH Asia</em>, 2026
+                <br>
+                <a href="https://wanglongzju.github.io/DirtyMoCap-Project-Page/">project page</a> / 
+                <a href="https://github.com/WangLongZJU/DirtyMoCap">code</a>
+                <p></p>
+                <p>DirtyMoCap reconstructs 4D SMPL-H motion from sparse, noisy, and unordered markers through proxy anchors and a learnable differentiable Gauss-Newton solver.</p>
+              </td>
+            </tr>
+
             <tr onmouseout="pilot_stop()" onmouseover="pilot_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
